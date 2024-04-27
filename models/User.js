@@ -24,7 +24,10 @@ const userSchema =mongoose.Schema({
     }, 
     profile:{
         type:String,
-    }
+        default:"avatar.png",
+    },
+    resetPasswordToken: String,
+    resetPasswordExpires: Date 
 },
 {
     timestamp:true,
